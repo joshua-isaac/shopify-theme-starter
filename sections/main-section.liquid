@@ -1,0 +1,25 @@
+<div>
+    <h1>{{ section.settings.title }}</hjson>
+    <p>{{ section.settings.description }}</p>
+</div>
+
+{% schema %}
+  {
+    "name": "Main section",
+    "class": "main-section",
+    "tag": "section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Title",
+        "default": "Welcome to the shopify theme starter"
+      }, {
+        "type": "text",
+        "id": "description",
+        "label": "Description",
+        "default": "This is a demo store for a barebones shopify theme, ready for you to completely customize with custom code and styles."
+      }
+    ]
+  }
+{% endschema %}
